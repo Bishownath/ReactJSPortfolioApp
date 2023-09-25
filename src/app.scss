@@ -1,0 +1,26 @@
+.app {
+    height: 100vh;
+    overflow-x: hidden;
+    position: relative;
+
+
+    .sections {
+        width: 100%;
+        height: calc(100vh - 70px);
+        // background-color: indigo;
+        top: 70px;
+        position: absolute;
+        scroll-snap-type: y mandatory;
+        overflow-y: scroll;
+        scroll-behavior: smooth;
+
+
+        // all direct child element of parent element, in this case sections elements
+        >* {
+            width: 100%;
+            height: calc(100vh - 70px);
+            scroll-snap-align: center;
+
+        }
+    }
+}

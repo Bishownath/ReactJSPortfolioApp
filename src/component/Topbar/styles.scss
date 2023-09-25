@@ -1,0 +1,94 @@
+@import "../../global.scss";
+
+.topBar {
+    height: 70px;
+    width: 100%;
+    background-color: $mainColor;
+    position: fixed;
+    top: 0;
+    z-index: 3;
+    color: white;
+    transition: 1s ease;
+
+    &.active {
+        color: $mainColor;
+        transition: 1s ease;
+        background-color: white;
+    }
+
+
+    .wrapper {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+
+        a {
+            text-decoration: none;
+            color: white;
+
+            &.active {
+                color: $mainColor;
+            }
+        }
+
+        a:visited {
+            text-decoration: none;
+        }
+
+        .logo {
+            font-size: 60px;
+            margin-left: 20px;
+
+            &.active {
+                color: $mainColor;
+            }
+        }
+
+        .left {
+            width: 60%;
+            font-size: 50px;
+            font-weight: 800;
+            color: white;
+            display: flex;
+
+            &.active {
+                color: $mainColor;
+            }
+
+            .contactInformation {
+                display: flex;
+                align-items: center;
+                justify-content: flex-start;
+
+
+                span {
+                    font-size: 15px;
+                    font-weight: 700;
+                    padding-left: 5px;
+                    padding-right: 30px;
+
+                }
+            }
+
+        }
+
+        .right {
+
+
+            .menuIcon {
+                font-size: 60px;
+                cursor: pointer;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding-right: 20px;
+
+            }
+
+            &.active {
+                color: white;
+                transition: 1s;
+            }
+        }
+    }
+}

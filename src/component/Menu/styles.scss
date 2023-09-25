@@ -1,0 +1,41 @@
+@import "./../../global.scss";
+
+.menu {
+    width: 300px;
+    height: 100vh;
+    position: fixed;
+    top: 70px;
+    background-color: $mainColor;
+    right: -300px;
+    float: right;
+    z-index: 2;
+    transition: all 1s ease;
+
+    &.active {
+        right: 0px;
+    }
+
+    ul {
+        padding: 0;
+        margin: 0;
+        text-decoration: none;
+
+        li {
+            text-decoration: none;
+            list-style: none;
+            padding: 10px;
+            margin: 50px;
+
+
+
+            a {
+                color: white;
+                padding: 20px;
+                font-size: 25px;
+                font-weight: 700;
+                text-decoration: none;
+            }
+        }
+
+    }
+}

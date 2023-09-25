@@ -1,0 +1,32 @@
+.intro {
+    overflow-x: hidden;
+
+    .wrapper {
+        display: flex;
+        flex: 1;
+
+        .leftSection {
+            flex: 0.6;
+            // background-color: cyan;
+            background-image: url("../../../public/assets/bg.png");
+            background-size: cover;
+            display: flex;
+
+
+
+            .images {
+
+                img {
+                    margin-left: 200px;
+                    width: 500px;
+                    height: 100vh;
+                }
+            }
+        }
+
+        .rightSection {
+            flex: 0.4;
+
+        }
+    }
+}
