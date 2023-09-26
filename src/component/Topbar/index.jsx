@@ -18,9 +18,9 @@ export default function Topbar({ openNav, setOpenNav }) {
                 <div className={"left " + (openNav && "active")}>
                     <div className="contactInformation">
                         <Person />
-                        <span>+1 (111) 222 3333</span>
+                        <span> <a href="tel:+">+1 (226) 984 7078</a></span>
                         <Mail />
-                        <span>test@gmail.com</span>
+                        <span> <a href="mailto:bishowd239@gmail.com">bishowd239@gmail.com</a></span>
                     </div>
                 </div>
                 <div className="right">

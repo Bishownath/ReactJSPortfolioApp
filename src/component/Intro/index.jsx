@@ -1,5 +1,6 @@
 import React from 'react'
 import "./styles.scss"
+import KeyboardDoubleArrowDownIcon from '@mui/icons-material/KeyboardDoubleArrowDown';
 
 export default function Intro() {
     return (
@@ -11,9 +12,9 @@ export default function Intro() {
                     </div>
                 </div>
                 <div className="rightSection">
-                    <h1>Hi, I am</h1>
-                    <h2>Soo Bas</h2>
-                    <h3>I am a Software Developer</h3>
+                    <h1 className='uppercase'>Bishownath Dhakal</h1>
+                    <h3 className='h3'>A Software Developer by profession.</h3>
+                    <a href="#work" className='arrowDown'><KeyboardDoubleArrowDownIcon className='arrowDown' /></a>
                 </div>
             </div>
         </div>
