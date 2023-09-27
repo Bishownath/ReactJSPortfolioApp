@@ -6,7 +6,6 @@ import Mail from '@mui/icons-material/Mail';
 import CloseIcon from '@mui/icons-material/Close';
 
 export default function Topbar({ openNav, setOpenNav }) {
-    // console.log("Set Open Nav", setOpenNav(!openNav))
     return (
         <div className={'topBar ' + (openNav && 'active')}>
             <div className="wrapper">

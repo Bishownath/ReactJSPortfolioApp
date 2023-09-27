@@ -1,0 +1,94 @@
+@import "./../../global.scss";
+
+.portfolio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    h1 {
+        padding-top: 20px;
+        font-size: 50px;
+        text-transform: uppercase;
+        margin-bottom: 20px;
+    }
+
+    .wrapperCategory {
+        ul {
+            display: flex;
+            flex-direction: row;
+            padding-top: 10px;
+            justify-content: center;
+            list-style: none;
+
+            li {
+                padding: 20px;
+                border-radius: 10px;
+                cursor: pointer;
+
+                &.active {
+                    background-color: $mainColor;
+                    color: white;
+
+                }
+            }
+        }
+    }
+
+    .wrapperItems {
+        width: 80%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+
+        .item {
+            position: sticky;
+            padding: 20px;
+            margin: 20px;
+            width: 220px;
+            height: 150px;
+            border-radius: 20px;
+            text-align: center;
+            box-shadow: 10px 20px 30px lightgray;
+            cursor: pointer;
+
+            .h3 {
+                opacity: 0;
+            }
+
+
+            &:hover {
+                position: sticky;
+                width: 230px;
+                height: 160px;
+                transition: all 1s ease-in;
+            }
+        }
+
+
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: fill;
+            z-index: 1;
+        }
+
+
+        .item:hover {
+            animation: itemImage 2s infinite;
+        }
+
+        @keyframes itemImage {
+            50% {
+                box-shadow: 10px 20px 30px $mainColor;
+            }
+
+            100% {
+                box-shadow: 10px 20px 30px $mainColor;
+            }
+
+        }
+    }
+}
