@@ -60,7 +60,7 @@ export default function Portfolio() {
                 {data.map((d) => (
 
                     <div className="item">
-                        <img src={d.img} alt="asd" />
+                        <img src={d.img} />
                     </div>
                 )
                 )}
