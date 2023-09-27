@@ -1,6 +1,7 @@
 import "./app.scss";
 import Topbar from "./component/Topbar"
 import Intro from "./component/Intro"
+import Portfolio from "./component/Portfolio"
 import Work from "./component/Work"
 import Testimonials from "./component/Testimonials"
 import Contact from "./component/Contact"
@@ -15,6 +16,7 @@ function App() {
       <Menu openNav={openNav} setOpenNav={setOpenNav} />
       <div className="sections">
         <Intro />
+        <Portfolio />
         <Work />
         <Testimonials />
         <Contact />
