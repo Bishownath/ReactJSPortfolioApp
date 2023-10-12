@@ -1,3 +1,107 @@
+@import "./../../global.scss";
+
 .work {
-    background-color: red;
+    background-color: whitesmoke;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    // h3 {
+    //     font-size: 50px;
+    //     display: flex;
+    //     justify-content: center;
+    //     padding-top: 20px;
+    // }
+
+    .slider {
+        position: absolute;
+        left: 0;
+        height: 350px;
+        display: flex;
+
+        .container {
+            width: 100vw;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            .item {
+                background-color: white;
+                width: 800px;
+                height: 100%;
+                padding: 2px;
+                display: flex;
+                border-radius: 30px 30px 30px 30px;
+
+                .left {
+
+                    width: 50%;
+                    flex: 6;
+                    flex-direction: column;
+                    padding-left: 10px;
+                    top: 10px;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+
+                    img {
+                        padding-top: 10px;
+                        display: flex;
+                        flex-direction: column;
+                        // justify-content: flex-start;
+                        // position: absolute;
+                        border-radius: 50%;
+                        object-fit: fill;
+                        width: 100px;
+                        height: 100px;
+
+                    }
+
+                    h1 {
+                        display: flex;
+                        flex-direction: column;
+                        // position: absolute;
+                        font-size: 40px;
+                        margin-left: 12px;
+                    }
+
+                    h3 {
+                        display: flex;
+                        flex-direction: column;
+                        text-align: justify;
+                        align-items: flex-start;
+                        padding: 10px;
+                        font-size: 16px;
+                        margin-left: 12px;
+                    }
+
+                    a {
+                        padding-bottom: 20px;
+                    }
+
+                }
+
+                .right {
+                    transition: all 1s ease;
+                    flex: 6;
+                    height: 100%;
+                    align-items: center;
+                    justify-content: center;
+
+                    img {
+                        transform: rotate(-10deg);
+                        height: 350px;
+                        width: 400px;
+                    }
+
+                    &:hover {
+                        transition: all 1s ease;
+                        transform: rotate(-5deg);
+                    }
+                }
+            }
+        }
+    }
 }
